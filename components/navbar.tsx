@@ -9,7 +9,7 @@ export default async function Navbar() {
 			<div className="flex items-center w-full justify-between">
 				<div className="flex items-center gap-x-4">
 					<Link href="/">
-						<h1 className="font-semibold text-xl">Todo app</h1>
+						<h1 className="font-semibold text-xl">Kunj's Personalised Task Flow</h1>
 					</Link>
 				</div>
 				{(await isAuthenticatedNextjs()) && <UserDetails />}
