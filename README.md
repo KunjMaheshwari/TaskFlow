@@ -55,6 +55,3 @@ Repository structure may vary by framework, but typically:
 - `src/` – application source
 - `convex/` – Convex functions and schema
 - `public/` – static assets
-
-## License
-Add a license file (MIT recommended) if you plan to distribute this project.
