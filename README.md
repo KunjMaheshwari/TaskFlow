@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# TaskFlow
+
+Minimal todo application built with **Convex**.
+
+## Overview
+TaskFlow is a lightweight task manager focused on fast task capture and simple organization.
+
+## Tech Stack
+- TypeScript
+- Convex
+- CSS
+
+## Features
+- Create, update, and delete todos
+- Mark tasks as complete / incomplete
+- Real-time data sync powered by Convex
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+- Node.js (LTS recommended)
+- A Convex account / project
 
+### Install
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Run locally
+```bash
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Convex setup
+Initialize and run Convex (first time and during development):
+```bash
+npx convex dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Scripts
+- `npm run dev` – start the development server
+- `npm run build` – build for production
+- `npm run start` – start the production server (if configured)
 
-## Learn More
+## Deployment
+Deploy the Convex backend:
+```bash
+npx convex deploy
+```
 
-To learn more about Next.js, take a look at the following resources:
+Deploy the frontend using your preferred hosting provider (Vercel, Netlify, etc.).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
+Repository structure may vary by framework, but typically:
+- `src/` – application source
+- `convex/` – Convex functions and schema
+- `public/` – static assets
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+Add a license file (MIT recommended) if you plan to distribute this project.
